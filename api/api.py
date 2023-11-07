@@ -1,6 +1,8 @@
 import allure
 import requests
 
+from helper.logger import log
+
 
 class Api:
     """Основной класс для работы с API"""
@@ -21,4 +23,5 @@ class Api:
                                           params=params,
                                           json=json_body,
                                           timeout=self._TIMEOUT)
+        log(response=self.response, request_body=json_body)
         return self
