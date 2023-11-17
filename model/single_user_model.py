@@ -5,6 +5,7 @@ from dataclasses import dataclass
 @dataclass
 class ResponseSingleUserModel:
     """Класс для параметров response"""
+
     id: int
     email: str
     first_name: str

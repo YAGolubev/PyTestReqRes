@@ -41,6 +41,7 @@ def test_get(playwright: sync_playwright):
     assert response.status == 200
     assert response.status_text == "OK"
 
+
 # def run(playwright: Playwright) -> None:
 
 #

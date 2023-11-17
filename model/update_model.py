@@ -1,10 +1,11 @@
 """Модели для update user"""
-from dataclasses import dataclass, asdict
+from dataclasses import asdict, dataclass
 
 
 @dataclass
 class RequestUpdateUserModel:
     """Класс для параметров rquest"""
+
     name: str
     job: str
 
@@ -16,6 +17,7 @@ class RequestUpdateUserModel:
 @dataclass
 class ResponseUpdateUserModel:
     """Класс для параметров response"""
+
     name: str
     job: str
     updated_at: str

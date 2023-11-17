@@ -12,5 +12,5 @@ def get_data(keys: Union[list, str], data: Union[dict, list]):
             if body is None:
                 return {}
         except KeyError:
-            raise KeyError(f'Отсутствуют данные для ключа {key}')
+            raise KeyError(f"Отсутствуют данные для ключа {key}")
     return body
