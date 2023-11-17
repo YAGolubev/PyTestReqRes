@@ -1,10 +1,11 @@
 """Модели для create user"""
-from dataclasses import dataclass, asdict
+from dataclasses import asdict, dataclass
 
 
 @dataclass
 class RequestCreateUserModel:
     """Класс для параметров rquest"""
+
     name: str
     job: str
 
@@ -16,6 +17,7 @@ class RequestCreateUserModel:
 @dataclass
 class ResponseCreateUserModel:
     """Класс для параметров response"""
+
     name: str
     job: str
     last_name: str

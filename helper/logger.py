@@ -11,7 +11,6 @@ def log(response, request_body=None):
     logger.info(f"REQUEST HEADERS: {response.request.headers}")
     logger.info(f"REQUEST BODY: {request_body}\n")
     logger.info(f"STATUS CODE: {response.status_code}")
-    logger.info(
-        f"RESPONSE TIME: {response.elapsed.total_seconds() * 1000:.0f} ms\n")
+    logger.info(f"RESPONSE TIME: {response.elapsed.total_seconds() * 1000:.0f} ms\n")
     logger.info(f"RESPONSE HEADERS: {response.headers}")
     logger.info(f"RESPONSE BODY: {response.text}\n.\n.")
